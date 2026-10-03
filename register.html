@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Ghibli - Register</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://i.pinimg.com/1200x/d9/37/18/d9371869f397d71653caa36c400abfd9.jpg') no-repeat center center/cover;
+      padding: 20px;
+    }
+
+    /* Glassmorphism Card Container */
+    .form-container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 16px;
+      padding: 35px 30px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .form-container h1 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Input Groups */
+    .input-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 0.85rem;
+      margin-bottom: 5px;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+      color: #fff;
+      font-size: 0.9rem;
+      outline: none;
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .input-group input::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .input-group input:focus {
+      background: rgba(255, 255, 255, 0.3);
+      border-color: #ffffff;
+    }
+
+    /* Submit Button */
+    .btn-submit {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      background: #ffffff;
+      color: #333333;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.1s;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-submit:hover {
+      background: rgba(255, 255, 255, 0.9);
+      transform: translateY(-1px);
+    }
+
+    /* Navigation Link */
+    .switch-link {
+      margin-top: 18px;
+      font-size: 0.85rem;
+    }
+
+    .switch-link a {
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .switch-link a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 480px) {
+      .form-container {
+        padding: 25px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="form-container">
+    <h1>Register</h1>
+    <form action="#" method="POST">
+      
+      <div class="input-group">
+        <label for="reg-username">Username</label>
+        <input type="text" id="reg-username" name="username" placeholder="Username" required>
+      </div>
+
+      <div class="input-group">
+        <label for="reg-email">Email Address</label>
+        <input type="email" id="reg-email" name="email" placeholder="Email Address" required>
+      </div>
+
+      <div class="input-group">
+        <label for="reg-phone">Phone Number</label>
+        <input type="tel" id="reg-phone" name="phone" placeholder="Phone Number">
+      </div>
+
+      <div class="input-group">
+        <label for="reg-password">Password</label>
+        <input type="password" id="reg-password" name="password" placeholder="Password" required>
+      </div>
+
+      <div class="input-group">
+        <label for="reg-confirm-password">Confirm Password</label>
+        <input type="password" id="reg-confirm-password" name="confirm_password" placeholder="Confirm Password" required>
+      </div>
+
+      <button type="submit" class="btn-submit">Register</button>
+
+      <p class="switch-link">
+        Already have an account? <a href="login.html">Login Here</a>
+      </p>
+
+    </form>
+  </main>
+
+</body>
+</html>
